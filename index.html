@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="head">
+      <div class="left">
+        <img src="security.png" alt="" class="secu" />
+        <img src="security-logo.png" alt="" class="logo" />
+      </div>
+      <div class="right">
+        <div class="content">
+          <h1 class="h-1">
+            Your Safety
+            <br />
+            <h2 class="h-2">Our Responsibility</h2>
+          </h1>
+          <div class="para">
+            <div>
+              <h4 class="h-3">
+                --Security is super important because it keeps your stuff safe.
+                It's like locking your door or putting a password on your phone
+                to make sure only you can get in.
+              </h4>
+            </div>
+            <div class="button">
+              <div class="btn-1">
+                <button><a href="#section1">Get Started</a></button>
+              </div>
+              <div class="btn-2"><button>About</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="section1">
+      <div class="sec-content-1">
+        <div class="sec-img"><img src="cam.jpg" alt="" /></div>
+        <div class="sec-p">
+          <div class="sec-para">
+            Security is like a sturdy lock on a door, keeping what's valuable
+            safe from harm. It's about protecting ourselves, our things, and our
+            information from any dangers that might come our way.
+          </div>
+        </div>
+      </div>
+      <div class="sec-content-2">
+        <div class="sec-p">
+          <div class="sec-para">
+            To enhance security measures and enable webcam access for person
+            detection, an "Enable Camera" button can be integrated into the
+            security system's interface.
+          </div>
+          <br />
+          <div class="sec-btn"><button class="btn"><a href="#sec-video">Enable Camera</a></button></div>
+        </div>
+        <div class="sec-img"><img src="loc.jpg" alt="" /></div>
+      </div>
+
+      <div class="sec-invisible" id="sec-video">
+        <video id="webcam" autoplay muted ></video>
+        <div class="sec-closed"><button onclick="closed()">Close</button></div>
+      </div>
+    </section>
+    <footer>
+      <div class="up">
+      <div class="foot-img">
+        <img src="lo.png" alt="" />
+      </div>
+      <div><h4>Security is a multifaceted concept encompassing various measures and practices aimed at protecting assets, individuals, and information from threats, risks, and harm . . </h4></div>
+      </div>
+      <div class="down">
+      <div class="img">
+        <div class="img-1">
+          <img src="insta.png" alt="" />
+        </div>
+        <div class="img-2">
+          <img src="facebook.png" alt="" />
+        </div>
+        <div class="img-3">
+          <img src="twitter.png" alt="" />
+        </div>
+      </div>
+        <div class="copy"><p>copyright @ 2024</p></div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
