@@ -44,8 +44,8 @@ function enableCam(event) {
   invisible.classList.add('sec-visible')
   
   const constraints = {
-    video: true
-  };
+        video: { facingMode: { exact: "environment" } }
+    };
   navigator.mediaDevices.getUserMedia(constraints).then(function(stream) {
     video.srcObject = stream;
     video.addEventListener('loadeddata', predictWebcam);
